@@ -9,7 +9,7 @@ namespace Wingtip_Toys.Models
         public int ProductID { get; set; }
         
         [Required, StringLength(100), Display(Name = "Name")]
-        public int ProductName { get; set; }
+        public string ProductName { get; set; }
 
         [Required, StringLength(10000), Display(Name = "Product Description"),
          DataType(DataType.MultilineText)]
