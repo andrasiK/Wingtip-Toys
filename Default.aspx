@@ -5,6 +5,5 @@
         <h1><%: Title %>.</h1>
         <h2>Wingtip Toys can help you find the perfect gift.</h2>
         <p class="lead">We are all ablout transportation toys. You can order any of our toys today. Each toy listing has detailed information to help you choose the right toy. </p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-   
+        
 </asp:Content>

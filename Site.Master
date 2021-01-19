@@ -37,28 +37,36 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Wingtip Toys</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/ProductList">Products</a></li>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" runat="server" href="~/">Wingtip Toys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                
+                <div class="navbar-collapse collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" runat="server" href="~/">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" runat="server" href="~/About">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" runat="server" href="~/Contact">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" runat="server" href="~/ProductList">Products</a>
+                        </li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" runat="server" href="~/Account/Register">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" runat="server" href="~/Account/Login">Log in</a>
+                                </li>
                             </ul>
                         </AnonymousTemplate>
                      
@@ -73,9 +81,7 @@
                         
                     </asp:LoginView>
                 </div>
-            </div>
-        </div>
-
+       </nav>
         <div id ="TitleContent" style="text-align: center">
             <a runat="server" href="~/">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" BorderStyle="None"  />
