@@ -28,7 +28,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <a href="ProductDetails.aspx?prodictID=<%#:Item.ProductID %>">
+                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID %>">
                                     <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath %>" width="100" height="75" style="border:solid" />
                                     </a>
                                 </td>
