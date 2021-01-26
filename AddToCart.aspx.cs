@@ -25,7 +25,7 @@ namespace Wingtip_Toys
             else
             {
                 Debug.Fail("ERROR : We should never get to AddToCart.aspx withot a ProductId");
-                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProdictId.");
+                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProductId.");
             }
             Response.Redirect("ShoppingCart.aspx");
         }

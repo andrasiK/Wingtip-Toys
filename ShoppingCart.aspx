@@ -9,7 +9,7 @@
             <asp:BoundField DataField="Product.UnitPrice" HeaderText="Price (each)" DataFormatString="{0:c}" />
             <asp:TemplateField HeaderText="Quantity">
                 <ItemTemplate>
-                    <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" Text="<%#: Item.Quantity %>""></asp:TextBox>
+                    <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Item Total">

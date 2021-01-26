@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Wingtip_Toys.Models;
+using Wingtip_Toys.Logic;
 
 namespace Wingtip_Toys
 {
@@ -12,6 +14,12 @@ namespace Wingtip_Toys
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public List<CartItem> GetShoppingCartItems()
+        {
+            ShoppingCartActions actions = new ShoppingCartActions();
+            return actions.GetCartItems();
         }
     }
 }
